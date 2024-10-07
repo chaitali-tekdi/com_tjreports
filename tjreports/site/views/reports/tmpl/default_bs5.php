@@ -28,6 +28,8 @@ $this->listOrder = $this->state->get('list.ordering');
 $this->listDirn  = $this->state->get('list.direction');
 $totalCount      = 0;
 
+HTMLHelper::_('formbehavior.chosen', methodArgs: 'select');
+
 foreach ($this->colToshow as $key => $data)
 {
 	if (is_array($data))
